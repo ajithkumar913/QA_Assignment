@@ -161,30 +161,4 @@ Test Data (testData.ts)
 
 ---
 
-## ⚙️ CI/CD — GitHub Actions
 
-Tests run automatically on every push and pull request to `main`/`master` via `.github/workflows/playwright.yml`.
-
-The workflow:
-1. Installs Node.js 20 and all dependencies
-2. Installs Chromium + Firefox via `npx playwright install --with-deps`
-3. Runs all tests headlessly
-4. Uploads the HTML report and JSON results as downloadable artifacts (30-day retention)
-
-> After pushing, replace `<your-username>` in the badge URL at the top with your GitHub username.
-
----
-
-## 🛠️ Tech Stack
-
-| Tool | Version | Purpose |
-|------|---------|---------|
-| [Playwright](https://playwright.dev/) | ^1.60.0 | Browser automation |
-| [TypeScript](https://www.typescriptlang.org/) | ^5.0.0 | Type safety |
-| Node.js | ≥18 | Runtime |
-
----
-
-## 👤 Author
-
-SDET Automation Assignment — Playwright + TypeScript | Page Object Model
